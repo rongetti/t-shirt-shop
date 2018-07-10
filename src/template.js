@@ -16,7 +16,7 @@ function template(title, state = {}, content = ''){
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                 <base href="/" />
-                <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+                <link rel="icon" href="assets/favicon.ico?" type="image/x-icon">
                 <title> ${title} </title>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
                 <link href="assets/style.css" rel="stylesheet">
