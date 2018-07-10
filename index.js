@@ -25,10 +25,10 @@ const ssr = require('./views/server');
 // server rendered product page
 app.get('/product/:id', (req, res) => {
 
-    fetch('http://localhost:3000/assets/products.json')
+    fetch(`http://api.gizarovski.com/t-shirt/${req.params.id}`)
         .then(res => res.json())
         .then(data => {
-            initialSettings.details['product'] = data.find(product => product.id === req.params.id);
+            initialSettings.details['product'] = data[0];
             const initialState = Object.assign({}, initialSettings);
             const { preloadedState, content}  = ssr(req, res, initialState);
             const response = template(`${initialSettings.details['product'].name} | T-Shirt Shop`, preloadedState, content);
@@ -44,7 +44,7 @@ app.get('/product/:id', (req, res) => {
 // server rendered list page
 app.get('/', (req, res) => {
 
-    fetch('http://localhost:3000/assets/products.json')
+    fetch('http://api.gizarovski.com/t-shirt')
         .then(res => res.json())
         .then(data => {
             const initialState = Object.assign({},

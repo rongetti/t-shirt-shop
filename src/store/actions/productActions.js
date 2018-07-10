@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import { REQUEST_PRODUCTS, RECEIVE_PRODUCTS } from './types';
 
-const productsAPI = 'http://t-shirt.gizarovski.com/assets/products.json';
+const productsAPI = 'http://api.gizarovski.com/t-shirt';
 
 const compare = {
   'lowestprice': (a, b) => {
