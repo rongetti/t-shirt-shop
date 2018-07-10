@@ -1,0 +1,29 @@
+{
+  "currency": {
+    "item": "$"
+  },
+  "details": {
+    "selectedSize": null,
+    "selectedColor": null,
+    "selectedQty": 1
+  },
+  "filters": {
+    "items": {
+      "sizes": [],
+      "colors": [],
+      "priceRange": {
+        "min": 0,
+        "max": 200
+      }
+    }
+  },
+  "floatBag": {
+    "isOpen": false
+  },
+  "shoppingBag": {
+    "items": []
+  },
+  "sort": {
+    "item": ""
+  }
+}
